@@ -8,8 +8,8 @@ The main integration listens for new and updated Salesforce opportunities via a 
 
 ## Setup steps
 
-1. Configure a Salesforce platform event for new and updated opportunities (see Apex code below)
-2. Import the Fusion project
+1. In Salesforce, configure a platform event for new and updated opportunities (see Apex code below)
+2. In Fusion, import the Fusion project
 3. Configure the LLM and Salesforce Connectors
 4. Activate the integration and create an opportunity without a NextStep
 5. Refresh the screen to see that the update is created
@@ -41,3 +41,16 @@ trigger OpportunityTrigger on Opportunity (after insert, after update) {
     RecordUpsertPublisher.publish(Trigger.new, 'Opportunity');
 }
 ```
+
+## Screenshots
+
+Fusion Integration
+  ![image](images/integration.png)
+
+Edit Opportunity
+  ![image](images/editOpp1.png)
+  ![image](images/editOpp2.png)
+  ![image](images/editOpp3.png)
+
+Next Step automatically added
+  ![image](images/editOpp4.png)
