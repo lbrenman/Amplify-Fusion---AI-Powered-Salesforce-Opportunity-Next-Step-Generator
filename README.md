@@ -52,5 +52,8 @@ Edit Opportunity
   ![image](images/editOpp2.png)
   ![image](images/editOpp3.png)
 
-Next Step automatically added
+Next Step automatically added (optionally)
   ![image](images/editOpp4.png)
+
+Slack Notification
+  ![image](images/slack.png)
